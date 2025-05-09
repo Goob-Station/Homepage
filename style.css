@@ -1,0 +1,242 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #050a14;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+a {
+    color: #87CEFA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ADD8E6;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #B0C4DE;
+    text-align: center;
+}
+
+header {
+    background-color: #0a192f;
+    padding: 1em 0;
+    border-bottom: 2px solid #1c2a48;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    font-size: 1em;
+    color: #a9c2d9;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin: 0 3px;
+}
+
+nav ul li a:hover {
+    background-color: #1c3b5f;
+    color: #e0f0ff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(10, 25, 47, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.server-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.server-card {
+    background-color: #202A39;
+    border-radius: 8px;
+    padding: 0;
+    width: 350px;
+    min-height: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #A9BCD0;
+}
+
+.server-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-left-panel {
+    background-color: #1A222E;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 70px;
+    text-align: center;
+    border-right: 1px solid #303d4f;
+}
+
+.rp-type-large {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #6C91C2;
+    line-height: 1;
+}
+
+.region-short-large {
+    font-size: 1.2em;
+    color: #88A2BE;
+    margin-top: 5px;
+}
+
+.card-right-panel {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+.server-name-display {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #D4E0EF;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    min-height: 1.3em;
+}
+
+.server-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 10px;
+    font-size: 0.85em;
+    color: #9FB8D2;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stat-item i {
+    color: #6C91C2;
+    font-size: 0.9em;
+    width: 12px;
+    text-align: center;
+}
+
+.server-card-offline {
+    background-color: #382E2E;
+    border: 1px solid #504242;
+    position: relative;
+}
+
+.server-card-offline .card-left-panel {
+    background-color: #2E2626;
+    border-right: 1px solid #4a3e3e;
+}
+.server-card-offline .rp-type-large,
+.server-card-offline .region-short-large {
+    color: #888;
+}
+
+.server-card-offline .server-name-display.offline-message {
+    font-size: 1.2em;
+    color: #D87070;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.server-card-offline .server-error-details {
+    font-size: 0.8em;
+    color: #a08080;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.server-card h3,
+.server-card p,
+.server-card .info-row,
+.server-card .status-tags,
+.server-card .tag,
+.server-card .connect-button {
+    display: none !important;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #1c2a48;
+    font-size: 0.9em;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .server-card {
+        width: 100%;
+    }
+}

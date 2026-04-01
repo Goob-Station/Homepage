@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const goobServerConfigs = [
         { url: "sigma.goobstation.com", displayName: "Sigma" },
         { url: "alpha.goobstation.com", displayName: "Alpha" },
-        { url: "beta.goobstation.com", displayName: "Beta" },
-        { url: "omega.goobstation.com", displayName: "Omega" },
+        { url: "omega.goobstation.com", displayName: "Basileus" },
         { url: "aurum.goobstation.com", displayName: "Aurum" },
         { url: "regalis.goobstation.com", displayName: "Regalis" }
     ];
 
     const hostedServerConfigs = [
-        { url: "server.project-monolith.xyz", displayName: "Project Monolith" }
+        { url: "inferno.monolithstation.com", displayName: "Monolith Inferno" },
+        { url: "server.traumastation.com", displayName: "Trauma Station" }
     ];
 
     const goobServersContainer = document.getElementById('goob-servers-container');

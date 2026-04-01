@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const goobServerConfigs = [
         { url: "sigma.goobstation.com", displayName: "Sigma" },
         { url: "alpha.goobstation.com", displayName: "Alpha" },
-        { url: "omega.goobstation.com", displayName: "Basileus" },
-        { url: "aurum.goobstation.com", displayName: "Aurum" },
-        { url: "regalis.goobstation.com", displayName: "Regalis" }
+        { url: "omega.goobstation.com", displayName: "Basileus" }
     ];
 
     const hostedServerConfigs = [
